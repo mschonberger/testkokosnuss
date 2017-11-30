@@ -1,0 +1,33 @@
+Tutorial 1.0
+
+Hier nochmal schnell ein Tutorial mit den wichtigsten Befehlen, solltet ihr irgendwo nicht weiter wissen mit git
+
+Richtet euren Git-Clienten so ein, dass euer Name da steht, wenn ihr was hochgeladen habt:
+git config --global user.name "Sam Smith"
+git config --global user.email sam@example.com
+
+
+
+Pfad wechseln, dahin wo git später das Repo herunterladen soll
+cd /mnt/x/.../
+
+Um euch das Repo herunterzuladen
+git clone "URL"
+
+Danach noch einmal den Pfad ändern
+cd /mnt/x/.../kokosnuss/
+
+Allgemein nachschauen wie es aussieht, was muss gepusht werden, wo wurde was geändert
+git status
+
+Übliche Reihenfolge wenn ihr etwas hochladen wollt:
+1. git add -A (fügt alles was ihr gemacht habt hinzu)
+alternativ 1. alternativ: git add "filename" (falls ihr nur eine bestimmte File hochladen möchtet)
+2. git commit -m "Hier reinschreiben was ihr alles gemacht habt"
+3. git pull origin "branchname"
+4. git push origin "branchname"
+
+Um in einem eigenem Branch zu arbeiten (am Ende kommt alles in den Master!)
+git checkout -b <branchname> (damit wird ein neuer branch erstellt und ihr wechselt direkt in diesen)
+git checkout <branchname> (wechselt in einen anderen Branch)
+git branch -d <branchname> (Branch löschen, falls er nicht mehr gebraucht wird)

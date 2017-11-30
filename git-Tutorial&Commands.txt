@@ -1,4 +1,4 @@
-Tutorial 1.0.1
+Tutorial 1.0.2
 
 Hier nochmal schnell ein Tutorial mit den wichtigsten Befehlen, solltet ihr irgendwo nicht weiter wissen mit git
 
@@ -29,10 +29,13 @@ git checkout <branchname> (wechselt in einen anderen Branch)
 git branch -d <branchname> (Branch löschen, falls er nicht mehr gebraucht wird)
 
 
+Immer bevor ihr was hochladen wollt, checken ob nicht schon wer anderes was geändert habt
+git pull origin "branchname"
+
+
 Übliche Reihenfolge wenn ihr etwas hochladen wollt:
 1. git add -A (fügt alles was ihr gemacht habt hinzu)
 2. git commit -m "Hier reinschreiben was ihr alles gemacht habt"
-3. git pull origin "branchname"
-4. git push origin "branchname"
+3. git push origin "branchname"
 
 * alternativ 1. alternativ: git add "filename" (falls ihr nur eine bestimmte File hochladen möchtet)

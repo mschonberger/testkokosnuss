@@ -1,0 +1,4 @@
+AuthName RestrictedArea
+AuthType Basic
+AuthUserFile /home/inf181/public_html/.htpasswd
+require valid-user

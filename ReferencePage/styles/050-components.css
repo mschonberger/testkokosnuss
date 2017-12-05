@@ -1,0 +1,82 @@
+/* ----------------------------------------------------------------------------
+components.css                                                                  
+Enthält alle Regeln zu Komponenten.  
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+
+/* Site Header
+-----------------------------------------------------------------------------*/
+
+.site__header {
+    background-color: var(--color-head);
+    margin-bottom: var(--space-stack-xl);
+}
+
+.header__content {
+    max-width: var(--site-width);
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Navigation
+-----------------------------------------------------------------------------*/
+
+.nav {
+    padding: 0;
+    margin: 0;
+}
+
+.nav__item {
+    display: block;
+}
+
+.nav__item a {
+    text-decoration: none;
+    color: var(--color-text-light);
+}
+
+.nav__horizontal {
+    padding-bottom: var(--space-stack-s);
+}
+
+.nav__horizontal .nav__item {
+    display: inline-block;
+    padding-right: var(--space-inset-xs);
+}
+
+.nav__horizontal .nav__item+.nav__item {
+    border-left: solid 1px var(--color-border);
+    padding-left: var(--space-inset-xs);
+}
+
+
+/* Content
+-----------------------------------------------------------------------------*/
+
+.section__header {
+    text-align: center;
+    border-bottom: solid 1px var(--color-border);
+    margin-bottom: var(--space-stack-xl);
+}
+
+.section {
+    padding-bottom: var(--space-stack-xl);
+    margin-bottom: var(--space-stack-xl);
+}
+
+/* Images
+-----------------------------------------------------------------------------*/
+
+figure {
+    display: inline;
+    padding-bottom: var(--space-stack-l);
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.site__footer {
+    background-color: var(--color-footer);
+}

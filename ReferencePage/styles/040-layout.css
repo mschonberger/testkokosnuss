@@ -1,0 +1,252 @@
+/*----------------------------------------------------------------------------
+layout.css                                                                  
+Enthält alle übergreifenden typographischen Regeln.  
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+/* Grid
+-----------------------------------------------------------------------------*/
+/* Grid Areas
+-----------------------------------------------------------------------------*/
+
+.site__header {
+	grid-area: head;
+	position: sticky;
+	top: 0;	
+}
+
+.site__content {
+	grid-area: body;
+	justify-self: center;
+	margin: 20px;
+}
+
+.site__footer {
+	grid-area: foot;
+}
+
+/*--------------------------------------------------------------------------*/
+
+.content__html {
+	grid-area: html;
+}
+
+.content__css {
+	grid-area: css;
+}
+
+.content__js {
+	grid-area: js;
+}
+
+.content__jsBasics {
+	grid-area: basics;
+}
+
+.content__jsAdvanced {
+	grid-area: advanced;
+}
+
+.content__git {
+	grid-area: git;
+}
+
+/*--------------------------------------------------------------------------*/
+
+#basics__link {
+	grid-area: linkb;
+}
+
+#basics__where {
+	grid-area: where;
+}
+
+#basics__var {
+	grid-area: var;
+}
+
+#basics__algo {
+	grid-area: algo;
+}
+
+#basics__func {
+	grid-area: func;
+}
+
+/*--------------------------------------------------------------------------*/
+
+#dom__head {
+	grid-area: dh;
+}
+
+#dom__img {
+	grid-area: di;
+}
+
+#dom__text {
+	grid-area: dt;
+}
+
+/* General grids
+----------------------------------------------------------------------------*/
+
+.site {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: 
+		"head"
+		"body"
+		"foot";
+	grid-row-gap: var(--space-stack-default);
+	justify-items: stretch;
+}
+
+/* Full Content
+-----------------------------------------------------------------------------*/
+
+.site__content {
+	max-width: var(--site-width);
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(6, auto);
+	grid-template-areas: 
+		"html"
+		"css"
+		"js"
+		"basics"
+		"advanced"
+		"git";
+	grid-column-gap: var(--space-inline-default);
+}
+	
+/* 768px - 1024px
+-----------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+/* Full Content
+-----------------------------------------------------------------------------*/
+
+	.site__content {
+		max-width: var(--site-width);
+
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(5, auto);
+		grid-template-areas: 
+			"html css"
+			"js js"
+			"basics basics"
+			"advanced advanced"
+			"git git";
+		grid-column-gap: var(--space-inline-default);
+	}
+}
+
+/* 1024px - 1220px
+-----------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1024px) and (max-width: 1220px){
+
+/* Full Content
+-----------------------------------------------------------------------------*/
+
+	.site__content {
+		max-width: var(--site-width);
+
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: 
+			"html css js"
+			"basics basics basics"
+			"advanced advanced advanced"
+			"git git git";
+		grid-column-gap: var(--space-inline-default);
+	}
+
+/* Basics
+-----------------------------------------------------------------------------*/
+
+	#basics {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr):;
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: 
+			"linkb linkb"
+			"where where"
+			"var algo"
+			"func func";
+		grid-column-gap: var(--space-inline-xl);
+	}
+
+/* Advanced
+-----------------------------------------------------------------------------*/
+
+	#advanced__dom {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2. auto);
+		grid-template-areas: 
+			"dh dh"
+			"dt di";
+		grid-column-gap: var(--space-inline-default);
+	}
+}
+
+/* 1220px and larger
+-----------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1220px) {
+	.site__content {
+		margin: 0;
+	}
+
+/* Full Content
+-----------------------------------------------------------------------------*/
+	.site__content {
+		max-width: var(--site-width);
+
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: 
+			"html css js"
+			"basics basics basics"
+			"advanced advanced advanced"
+			"git git git";
+		grid-column-gap: var(--space-inline-default);
+	}
+
+/* Basics
+-----------------------------------------------------------------------------*/
+
+	#basics {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr):;
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: 
+			"linkb linkb"
+			"where where"
+			"var algo"
+			"func func";
+		grid-column-gap: var(--space-inline-xl);
+	}
+
+/* Advanced
+-----------------------------------------------------------------------------*/
+
+	#advanced__dom {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2. auto);
+		grid-template-areas: 
+			"dh dh"
+			"dt di";
+		grid-column-gap: var(--space-inline-default);
+	}
+
+}

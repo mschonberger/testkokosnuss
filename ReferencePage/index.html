@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Challenge References</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+    <!-- Normalize and Resets -->
+    <link rel="stylesheet" href="lib/styles/normalize.css">
+    <link rel="stylesheet" href="lib/styles/main.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/010-resets.css">
+    <link rel="stylesheet" href="styles/020-base.css">
+    <link rel="stylesheet" href="styles/030-typography.css">
+    <link rel="stylesheet" href="styles/040-layout.css">
+    <link rel="stylesheet" href="styles/050-components.css">
+</head>
+
+<body class="site">
+    <header class="site__header">
+        <nav class="header__content">
+            <ul class="nav nav__horizontal">
+                <li class="nav__item"><a href="#references" id="js-ref">References</a></li>
+                <li class="nav__item"><a href="#jsbasics" id="js-bas">JS Basics</a></li>
+                <li class="nav__item"><a href="#jsadvanced" id="js-adv">JS Advanced</a></li>
+                <li class="nav__item"><a href="#git" id="js-git">Git</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="site__content">
+        <div class="section content__html" id="references">
+            <div class="section__header">
+                <h2 class="title">HTML</h2>
+                <h3 class="subtitle">References</h3>
+            </div>
+            <div class="section__content">
+                <ul class="content__refs">
+                    <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">General HTML collection at w3schools</a></li>
+                    <li><a href="https://wiki.selfhtml.org/wiki/HTML/Tutorials">Collection of HTML tutorials</a></li>
+                    <li><a href="https://developer.mozilla.org/de/Learn/Getting_started_with_the_web/HTML_basics">MDN HTML tutorial</a></li>
+                    <li><a href="https://wiki.selfhtml.org/wiki/HTML#Elemente">List of HTML elements</a></li>
+                    <li><a href="https://th-koeln.github.io/mi-bachelor-wba1/download/Chapter03-IntroductionToHTML.pdf">WBA1 script HTML-Basics</a></li>
+                    <li><a href="https://th-koeln.github.io/mi-bachelor-wba1/download/Chapter05-HTMLTablesAndForms.pdf">WBA1 script HTML-Advanced</a></li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <div class="section content__css">
+            <div class="section__header">
+                <h2 class="title">CSS</h2>
+                <h3 class="subtitle">References</h3>
+            </div>
+            <div class="section__content">
+                <ul class="content__refs">
+                    <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">General CSS collection at w3schools</a></li>
+                    <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">Complete guide to CSS-Grid</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">MDN tutorial for CSS-Grid</a></li>
+                    <li><a href="https://wiki.selfhtml.org/wiki/CSS/Tutorials">Collection of CSS tutorials</a></li>
+                    <li><a href="https://developer.mozilla.org/de/Learn/Getting_started_with_the_web/CSS_basics">MDN CSS tutorial</a></li>
+                    <li><a href="https://wiki.selfhtml.org/wiki/CSS/Eigenschaften">List of CSS properties</a></li>
+                    <li><a href="https://wiki.selfhtml.org/wiki/CSS/Selektoren">List of CSS selectors</a></li>
+                    <li><a href="https://th-koeln.github.io/mi-bachelor-wba1/download/Chapter04-IntroductionToCSS.pdf">WBA1 script CSS-Basics</a></li>
+                    <li><a href="https://th-koeln.github.io/mi-bachelor-wba1/download/Chapter07-AdvancedCSSLayout.pdf">WBA1 script CSS-Advanced</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="section content__js">
+            <div class="section__header">
+                <h2 class="title">JavaScript</h2>
+                <h3 class="subtitle">References</h3>
+            </div>
+            <div class="section__content">
+                <ul class="content__refs">
+                    <li><a href="https://www.w3schools.com/js/default.asp" target="_blank">General JS collection at w3schools</a></li>
+                    <li><a href="https://wiki.selfhtml.org/wiki/JavaScript/Tutorials">Collection of JS tutorials</a></li>
+                    <li><a href="https://developer.mozilla.org/de/Learn/Getting_started_with_the_web/JavaScript_basis">MDN JS tutorial</a></li>
+                    <li><a href="https://th-koeln.github.io/mi-bachelor-wba1/download/Chapter08-JavaScript1LanguageFundamentals.pdf" target="_blank">WBA1 script JS-Basics</a></li>
+                    <li><a href="https://th-koeln.github.io/mi-bachelor-wba1/download/Chapter09-JavaScript2UsingJavaScript.pdf" target="_blank">WBA1 script JS-Advanced</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="section content__jsBasics" id="jsbasics">
+            <div class="section__header">
+                <h2 class="title">JavaScript</h2>
+                <h3 class="subtitle">Basics</h3>
+            </div>
+            <div class="section__content" id="basics">
+                <a href="https://th-koeln.github.io/mi-bachelor-wba1/lehrveranstaltungen/2-workshop-javascript-basics/" target="_blank" id="basics__link">WBA1 Workshop Javascript Basics</a>
+                <div id="basics__where">
+                    <h4 class="topic">Where to?</h4>
+                    <p>
+                        The JavaScript is located in the .js files and is loaded into the HTML using the script tag <b>at the end of your HTML file</b>. This makes sure the script starts running when the rest of your site has finished loading. To load your .js files you write the location into the ref attribute of your script tag.
+                        <code><b><</b>script <b class="important">ref="example.js"</b>><b><</b>/script></code>
+                    </p>
+                </div>
+                <div id="basics__var">
+                    <h4 class="topic">Variables</h4>
+                    <p>
+                        Variables in JavaScript are dynamically typed. Instead of a specific data-type you use the <b>var</b> keyword. So each variable changes its specific type depending on their value. After the declaration you can give them a new value at every time. 
+                        <code>
+                            var a = 0; <br>
+                            a = 1; <br>
+                            a = "text"; <br>
+                            a = [12, 23, 34];
+                        </code>
+                        Aside from primitive types you can assign references to the variables. In that case they don't contain values but simply a redirection to the value of another variable.
+                        <code>
+                            var b = a; <br>
+                            b[1] = 45;
+                        </code>
+                        In the example a and b now refer to the same array which contains the numbers [12, 45, 34].
+                    </p>
+                </div>
+                <div id="basics__algo">
+                    <h4 class="topic">Algorithmic structures</h4>
+                    <p>
+                        JavaScript uses the same conditionals as java: <b>if, else if, else, switch</b>. And also the same loops: <b>while, for</b>. With those you can write simple algorithms for your page.
+                        <code>
+                            if (condition) { code }<br>
+                            else if (condition) { code }<br>
+                            else { code }<br>
+                            switch (variable) { case 'value': code }<br>
+                            while (expression) { code }<br>
+                            for () { code }
+                        </code>
+                        Some algorithms can be written shorter in JavaScript. In conditional assignments one if else condition can be simplified into one line. In the example the value of x is supposed to be "y is 4" if the value of y is 4 and "y is not 4" if it is not. 
+                        <code>
+                            x = (y==4) ? "y is 4" : "y is not 4";
+                        </code>
+                    </p>
+                </div>
+                <div id="basics__func">
+                    <h4 class="topic">Functions</h4>
+                    <p>
+                        Functions can be declared using <b>function</b> and the name for your function. The rest works similar to java or other programming languages. As alternative to a declaration you can use a function expression. That way you can use a variable to create a function.
+                        <code>
+                            function addition (a, b) {
+                            <code>
+                                total = a + b;<br>
+                                return total;
+                            </code>
+                            }<br>
+
+                            var add = function (a, b) {
+                            <code>
+                                total = a + b;<br>
+                                return total;
+                            </code>
+                            }
+                        </code>
+                        You can use these functions like usual functions in other programming languages by using their name and give parameters if necessary. They can be nested and called back. Each nested function can "see" the surrounding functions, but not the other way around. So in the script inner functions are executed first followed by the next bigger functions.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section content__jsAdvanced" id="jsadvanced">
+            <div class="section__header">
+                <h2 class="title">JavaScript</h2>
+                <h3 class="subtitle">Advanced</h3>
+            </div>
+            <div class="section__content" id="advanced">
+                <a href="https://th-koeln.github.io/mi-bachelor-wba1/lehrveranstaltungen/workshop-javascript-advanced/" target="_blank" id="advanced__link">WBA1 Workshop JavaScript Advanced</a>
+
+                <div id="advanced__dom">
+                    <h4 class="topic" id="dom__head">DOM</h4>
+                    <figure id="dom__img">
+                        <img src="img/DOM-Overview-UsingJavaScript-by-RConnolly-and-RHoar.jpg" name="Using JavaScript by Randy Connolly and Ricardo Hoar" >
+                        <figcaption>Source: Chapter 9 Using JavaScript from "Fundamentals of Webdevelopment-2nd Ed" by Randy Connolly and Ricardo Hoar</figcaption>
+                    </figure>
+                    <p id="dom__text">
+                        The DOM, also known as Document Object Model, is a tree structure that resembles your HTML document. The root of the DOM is the document element. By using this element you can gain access to every other element using an element selector or a query selector. The classic method was referring to the wanted element with <b>getElementBy..("..")</b> and then either search for an Id, a ClassName or a TagName. A newer and easier method is to search with <b>querySelector("css-selector")</b> which simply uses a css selector to search and looks the same whether you search for a class name or an id.
+                        <code>
+                            var a = document.getElementById("first");<br>
+                            var b = document.querySelector("#first");
+                        </code>
+                        Both work equally fine but querySelector is the most common. The elements you select this way are nodes in the DOM-tree. Each node has certain attributes which are <b>classList, className, Id, innerHTML, Style, tagName</b> and also sometimes more specific attriutes like <b>href, src, value</b> that aren't available for every node. You can simply save the attribute values or modify them with JavaScript.
+                        <code>
+                            var c = document.querySelector("#first").className;<br>
+                            document.querySelector(#second).innerHTML = "This is 'second'";
+                        </code>
+                        Some attributes have multiple functions, classList for example has <b>.add("className"), .toggle("className"), .remove("className")</b>. To find out what attributes each node has and which functions those attributes have you check the w3schools website.
+                    </p>
+                </div>
+
+                <div id="advanced__events">
+                    <h4 class="topic">Events and Listeners</h4>
+                    <p>
+                        Events are actions that can be detected by JavaScript. Either through properties or listeners. Actions can be caused by user actions like clicks or by the browser for example if it has finished loading the page. When an event is triggered it gets handled by your JavaScript. This can go direktly with simple actions or you call a function with the listener or directly write an anonymous function into the listener.
+                        <code>
+                            var myButton = document.querySelector("#example");<br>
+                            myButton.onclick = alert("message");<br>
+                            myButton.addEventListener('click', message());<br>
+                            myButton.addEventListener('click', function() {
+                            <code>
+                                alert("message");
+                            </code>
+                            }
+                        </code>
+                        Whenever an event is triggered an object gets constructed by the browser that contains information about the event. For example the x and y coordinates of a click. These can be used as parameters for your functions. For special functions and how to use them you can check the links at the top.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section content__git" id="git">
+            <div class="section__header">
+                <h2 class="title">Git</h2>
+                <h3 class="subtitle">Tutorial</h3>
+            </div>
+            <div class="section__content">
+                <p>
+                    Hier nochmal schnell ein Tutorial mit den wichtigsten Befehlen, solltet ihr irgendwo nicht weiter wissen mit git. Richtet euren Git-Clienten so ein, dass euer Name da steht, wenn ihr was hochgeladen habt:
+                    <code>
+                        git config --global user.name "Max Musterheini"<br>
+                        git config --global user.email max@musterheini.com
+                    </code><br>
+                    Pfad wechseln, dahin wo git später das Repo herunterladen soll
+                    <code>
+                        cd /mnt/x/.../
+                    </code><br>
+                    Um euch das Repo herunterzuladen
+                    <code>
+                        git clone "URL"
+                    </code><br>
+                    Danach noch einmal den Pfad ändern
+                    <code>
+                        cd /mnt/x/.../kokosnuss/
+                    </code><br>
+                    Allgemein nachschauen wie es aussieht, was muss gepusht werden, wo wurde was geändert
+                    <code>
+                        git status
+                    </code><br>
+                    Um in einem eigenem Branch zu arbeiten (am Ende kommt alles in den Master!)
+                    <code>
+                        git checkout -b 'branchname' (damit wird ein neuer branch erstellt und ihr wechselt direkt in diesen)<br>
+                        git checkout 'branchname' (wechselt in einen anderen Branch)<br>
+                        git branch -d 'branchname' (Branch löschen, falls er nicht mehr gebraucht wird)
+                    </code><br>
+                    Immer bevor ihr was hochladen wollt, checken ob nicht schon wer anderes was geändert habt
+                    <code>
+                        git pull origin "branchname
+                    </code><br>
+                    Übliche Reihenfolge wenn ihr etwas hochladen wollt:
+                    <code>
+                        1. git add -A (fügt alles was ihr gemacht habt hinzu)*<br>
+                        2. git commit -m "Hier reinschreiben was ihr alles gemacht habt"<br>
+                        3. git push origin "branchname"
+                    </code><br>
+                    * alternativ: git add 'filename' (falls ihr nur eine bestimmte File hochladen möchtet)
+                </p>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="site__footer">
+        <p>
+            This is a reference and tutorial page for university projects.
+        </p>
+        <p>
+            Made by and for Team Kokosnuss
+        </p>
+    </footer>
+
+</body>
+
+<script type="text/javascript" src="scripts/myscript.js"></script>
+
+</html>

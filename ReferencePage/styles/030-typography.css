@@ -1,0 +1,76 @@
+/*----------------------------------------------------------------------------
+typography.css                                                                  
+Enthält alle übergreifenden typographischen Regeln.  
+
+Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
+----------------------------------------------------------------------------*/
+
+
+/* General 
+-----------------------------------------------------------------------------*/
+
+p {
+	text-align: justify;
+}
+
+code {
+	font-family: 'Verdana';
+	font-weight: bold;
+	display: block;
+	margin-left: var(--space-inline-xl);
+}
+
+figcaption {
+	font-size: var(--fs-s);
+	font-family: serif;
+}
+
+/* Links 
+-----------------------------------------------------------------------------*/
+
+a {
+	color: var(--color-brand);
+	text-decoration: none;
+}
+a:visited {
+	/*color: var(--color-head);*/
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* Titles
+-----------------------------------------------------------------------------*/
+
+.title,
+.subtitle {
+    font-size: var(--fs-xl);
+    font-family: var(--brand-font);
+    margin: 0;
+    line-height: 100%;
+    margin-bottom: var(--space-stack-xl);
+}
+
+.title {
+    color: var(--color-brand);
+}
+
+.subtitle {
+    font-size: var(--fs-l);
+}
+
+.title+.subtitle {
+    margin-top: calc(var(--space-stack-xs) - var(--space-stack-xl));
+}
+
+.topic {
+	color: var(--color-brand);
+	font-size: var(--fs-default);}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+footer p {
+	text-align: center;
+	color: var(--color-text-light);
+}

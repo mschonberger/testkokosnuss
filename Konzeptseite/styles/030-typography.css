@@ -19,13 +19,10 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 }
 
 .title {
-    color: var(--color-brand);
+    color: var(--primary);
 }
 
 .subtitle {
     font-size: var(--fs-l);
-}
-
-.title+.subtitle {
-    margin-top: calc(var(--space-stack-xs) - var(--space-stack-xl));
+    color: var(--secondary);
 }

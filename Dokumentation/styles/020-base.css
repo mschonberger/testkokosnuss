@@ -10,18 +10,59 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 -----------------------------------------------------------------------------*/
 
 :root {
-    /* 
-    Farben
+    /*
+    Grundfarben
     ----------------------------------------*/
-    --color-brand: #F07241;
-    --color-border: #dedede;
-    --color-text: #333;
-    --color-text-light: #989898;
-    --color-footer: #480048;
-    --color-head: #601848;
-    --color-important:  #DC143C;
-    --site-width: 1200px;
-    --brand-font: Dosis;
+    --blue: #007BE4;
+    --indigo: #6610f2;
+    --purple: #7071C5;
+    --pink: #e83e8c;
+    --red: #D0021B;
+    --orange: #fd7e14;
+    --yellow: #FFBD0A;
+    --green: #25CB55;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #666666;
+    --gray-dark: #333333;
+
+    --primary: #007BE4;
+    --secondary: #666666;
+    --success: #25CB55;
+    --info: #17a2b8;
+    --warning: #FFBD0A;
+    --danger: #D0021B;
+    --light: #e6e6e6;
+    --dark: #333333;
+
+    /*
+    Tesla Farben
+    ----------------------------------------*/
+    --tsl-blue: #007BE4;
+    --tsl-purple: #7071C5;
+    --tsl-red: #D0021B;
+    --tsl-yellow: #FFBD0A;
+    --tsl-green: #25CB55;
+    --tsl-black: #000;
+    --tsl-white: #fff;
+    --tsl-dark: #333333;
+    
+    /*
+    Fonts
+    ----------------------------------------*/
+    --brand-font: Montserrat;
+    --font-family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    /*
+    Screensizes
+    ----------------------------------------*/
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
     /* 
     Abstände basierend auf folgendem Konzept:
     https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62
@@ -31,7 +72,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
     --space-inset-default: 1rem;
     --space-inset-xs: 0.33rem;
     --space-inset-s: 0.66rem;
-    --space-inset-m: 1rem;
+    --space-inset-m: 1.2rem;
     --space-inset-l: 1.5rem;
     --space-inset-xl: 2rem;
     /* 
@@ -40,7 +81,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
     --space-stack-default: 1rem;
     --space-stack-xs: 0.33rem;
     --space-stack-s: 0.66rem;
-    --space-stack-m: 1rem;
+    --space-stack-m: 1.2rem;
     --space-stack-l: 1.5rem;
     --space-stack-xl: 2rem;
     --space-stack-xxl: 4rem;
@@ -50,9 +91,10 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
     --space-inline-default: 1rem;
     --space-inline-xs: 0.33rem;
     --space-inline-s: 0.66rem;
-    --space-inline-m: 1rem;
+    --space-inline-m: 1.2rem;
     --space-inline-l: 1.5rem;
     --space-inline-xl: 2rem;
+    --space-inline-xxl: 4rem;
     /* 
     Schriftgrößen 
     ----------------------------------------*/
@@ -77,7 +119,7 @@ body {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: var(--color-text);
+    color: var(--dark);
 }
 
 
@@ -90,5 +132,5 @@ body {
 }
 
 .important {
-    color: var(--color-important) !important;
+    color: var(--danger) !important;
 }

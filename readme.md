@@ -5,13 +5,13 @@ Malte Schönberger, Tristan Schmele, Annette Erfort, Daniel Tipping
 ## Ordnerstruktur
 In den Ordnern ist folgendes zu finden:    
 
-###Dokumentation
+### Dokumentation
 Die Dokumentation über den Challenge Tag, anhand einer einfachen HTML Seite  
-###Konzeptseite
+### Konzeptseite
 Unsere Konzeptseite mit den dazugehörigen Verlinkungen und Vorstellung der entwickelten Idee   
-###Prototyp
+### Prototyp
 Der Source Code für unseren Prototyp der sich auf der ADV befindet
-###BasicProjectStruktur
+### BasicProjectStruktur
 Der von uns zusammengestellte Grundbaukasten, damit jedes Teammitglied direkt beginnen kann, ohne alles einrichten zu müssen  
-###ReferencePage
+### ReferencePage
 Erstellte HTML Seite mit den wichtigsten Verlinkungen für Hinweise, Tutorials, Befehle, etc

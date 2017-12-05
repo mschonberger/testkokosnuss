@@ -1,20 +1,17 @@
-# Dokumentation für die WBA1-Challenge von Team Kokosnuss
-Blablabla wir sind Team Kokosnuss, allgemeine Infos zum Projekt, und so weiter:
+# WBA1-Challenge von Team Kokosnuss
+In diesem Repo arbeiten folgende Personen:   
+Malte Schönberger, Tristan Schmele, Annette Erfort, Daniel Tipping
 
-## Prototyp
-blablabla allgemeine Infos zum Prototyp, wurde vom Mockup Kit abgeleitet, welches als Grundlage diente und dann erweitert usw.. enthalten sind hier folgende Dinge...:
+## Ordnerstruktur
+In den Ordnern ist folgendes zu finden:    
 
-### images
-Hier liegen alle Bilder, die projektübergreifend Verwendung finden, z.B. Logo, Icons, Hintergründe, etc.
-
-### lib
-In diesem Verzeichnis werden alle externen Libraries, Framesworks und Helferlein gespeichert. Hier liegen also nur Files oder Verzeichnisse, die zwar ins Projekt eingebunden, die aber nicht bearbeitet werden.
-
-### scripts
-Hier liegen die eigenen Javascript Dateien.
-
-### styles
-Dieses Verzeichnis enthält alle CSS Dateien. Hierbei kann es hilfreich sein die Dateien zu nummerieren, damit sie eine sinnvolle Reihenfolge haben. Sinnvoll heißt: vom Allgemeinen zum Speziellen.
-
-## Konzeptseite
-blablabla allgemeine Infos zur Konzeptseite, etc
+###Dokumentation
+Die Dokumentation über den Challenge Tag, anhand einer einfachen HTML Seite  
+###Konzeptseite
+Unsere Konzeptseite mit den dazugehörigen Verlinkungen und Vorstellung der entwickelten Idee   
+###Prototyp
+Der Source Code für unseren Prototyp der sich auf der ADV befindet
+###BasicProjectStruktur
+Der von uns zusammengestellte Grundbaukasten, damit jedes Teammitglied direkt beginnen kann, ohne alles einrichten zu müssen  
+###ReferencePage
+Erstellte HTML Seite mit den wichtigsten Verlinkungen für Hinweise, Tutorials, Befehle, etc

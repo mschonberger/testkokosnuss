@@ -15,7 +15,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 .subsubsubtitle{
     font-size: var(--fs-xl);
     font-family: var(--brand-font);
-    margin: 0;
+    margin-top: var(--space-stack-xl);
     line-height: 100%;
     margin-bottom: var(--space-stack-xl);
 }
@@ -40,3 +40,8 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 .list{
     margin-left: (--space-stack-l);
 }
+
+p{
+    margin-left: 40px;
+    margin-bottom: 10px;
+        

@@ -14,10 +14,12 @@ div{
 .title,.subtitle{
     
     margin-left: 20px;
+    margin-top:  var(--space-stack-xl: 2rem);
 }
 
 p{
     margin-left: 40px;
+    margin-bottom: var(--space-stack-xl: 2rem);
         
 }
 .list{

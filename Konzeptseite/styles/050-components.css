@@ -1,8 +1,31 @@
 /* ----------------------------------------------------------------------------
-components.css                                                                  
-Enthält alle Regeln zu Komponenten.  
+components.css
+Enthält alle Regeln zu Komponenten.
 
 Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 ----------------------------------------------------------------------------*/
 
+/* Buttons
+-----------------------------------------------------------------------------*/
 
+input.MyButton {
+  display: inline;
+  width: 42%;
+  height: 3rem;
+  margin-left: 5%;
+  margin-right: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 100%;
+  background: #3366cc;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 1px;
+}
+
+input.MyButton:hover {
+  color: #ffffff;
+  background: orange;
+  border: 1px solid #orange;
+}

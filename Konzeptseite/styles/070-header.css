@@ -7,18 +7,19 @@
 }
 
 .image__right{
-    width: 50%;
+    width: 70%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .header__text{
-    text-align:center;
-   vertical-align:middle;
-   margin-left: 50px;
-   margin-right: 50px;
-   color: white;
+  color: white;
+  text-align:center;
+  vertical-align:middle;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-decoration-color: white;
 }
 
 .taballe {

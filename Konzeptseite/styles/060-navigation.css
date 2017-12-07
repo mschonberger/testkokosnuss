@@ -1,0 +1,44 @@
+/*Das CSS für die Navigation inklusive Logo*/
+
+/*Allgemein*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.nav {
+	background: rgb(0, 0, 0);
+	color: rgb(105, 161, 6);
+	font-size: 1.2rem;
+}
+
+.nav:after {
+	content: "";
+    display: table;
+    clear: both;
+}
+
+.nav__logo {
+	margin: 10px;
+	width: 3.5rem;
+	display: inline-block;
+	float: left;
+}
+
+.nav__menu {
+	margin: 1.5rem;
+	display: inline-block;
+	float: right;
+
+}
+
+.menu__element {
+	display: inline-block;
+  	font-size: 32;
+}
+
+.menu__element + .menu__element {
+	padding-left: 5px;
+}

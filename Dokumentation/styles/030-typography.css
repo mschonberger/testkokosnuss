@@ -1,39 +1,91 @@
 /*----------------------------------------------------------------------------
-typography.css                                                                  
-Enthält alle übergreifenden typographischen Regeln.  
+typography.css
+Enthält alle übergreifenden typographischen Regeln.
 
 Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 ----------------------------------------------------------------------------*/
 
 
-/* Titles 
+/* Titles
+-----------------------------------------------------------------------------*/
+
+p {
+	text-align: justify;
+}
+
+code {
+	font-family: 'Verdana';
+	font-weight: bold;
+	display: block;
+	margin-left: var(--space-inline-xl);
+}
+
+figcaption {
+	font-size: var(--fs-s);
+	font-family: serif;
+}
+
+.nav__font {
+	font-family: 'Montserrat', bold;
+	font-weight: bold;
+	margin: 50px;
+  margin-left: 50px;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Links
+-----------------------------------------------------------------------------*/
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:visited {
+	/*color: var(--color-head);*/
+}
+
+a:hover {
+  color: #007BE4;
+  text-decotration: none;
+}
+
+/* Titles
 -----------------------------------------------------------------------------*/
 
 .title,
-.subtitle,
-.subsubtitle,
-.subsubsubtitle{
+.subtitle {
     font-size: var(--fs-xl);
     font-family: var(--brand-font);
-    margin: 0;
+    margin-left: 50px;
     line-height: 100%;
     margin-bottom: var(--space-stack-xl);
 }
 
 .title {
-    /*color: var(--primary);*/
+    color: var(--color-brand);7
+    margin-left: 50px;
 }
 
 .subtitle {
     font-size: var(--fs-l);
-    color: var(--secondary);
-}
-.subsubtitle{
-    font-size: var(--fs-m);
+    margin: 70px;
+    margin-left: 70px;
 }
 
-.subsubsubtitle{
-    font-size: var(--fs-m);
-    color: var(--secondary);
-    padding-left: 5px;
+.title+.subtitle {
+    margin-top: calc(var(--space-stack-xs) - var(--space-stack-xl));
+}
+
+.topic {
+	color: var(--color-brand);
+	font-size: var(--fs-default);}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+footer p {
+	text-align: center;
+	color: var(--color-text-light);
 }

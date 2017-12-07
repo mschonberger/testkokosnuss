@@ -37,3 +37,6 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
     color: var(--secondary);
     padding-left: 5px;
 }
+.list{
+    margin-left: (--space-stack-l);
+}

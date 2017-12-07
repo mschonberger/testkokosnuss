@@ -86,8 +86,7 @@ function performSearch() {
             keyword: 'Sehenswürdigkeit'
         };
 
-        //Listen Reset
-        document.querySelector('#js-list').innerHTML = "";
+        clearList();
 
         service.radarSearch(request, callback);
     });
@@ -120,10 +119,8 @@ function addMarker(place) {
             console.error(status);
             return;
         }
-
-        //Fill List
-        var text = "<li>" + result.name + "</li>";
-        document.querySelector('#js-list').innerHTML += text;
+        
+        createElement(result);
 
     });
 

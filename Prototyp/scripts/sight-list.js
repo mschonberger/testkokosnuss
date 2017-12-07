@@ -1,6 +1,6 @@
 var test;
-var distance;
 var position;
+var distance;
 
 function clearList(gps) {
     //Listen Reset
@@ -44,11 +44,19 @@ function createElement(location) {
                 var element = results[j];
                 distance = element.distance.text;
 
-                var img = "<li class='js-element js-liImg'>" + "<img class='js-img' src='" + location.photos[0].getUrl(object) + "'>" + "</li>";
-                var name = "<li class='js-element js-name'>"+ location.name + "</li>";
-                var distance = "<li class='js-element js-distance'>Entfernung: " + distance + "</li>";
+                // var img = "<li class='js-element js-liImg'>" + "<img class='js-img' src='" + location.photos[0].getUrl(object) + "'>" + "</li>";
+                // var name = "<li class='js-element js-name'>"+ location.name + "</li>";
+                // var dis = "<li class='js-element js-distance'>Entfernung: " + distance + "</li>";
 
-                document.querySelector('#js-list').innerHTML += img + name + distance;
+                var image = "<img class='js-img' src='" + location.photos[0].getUrl(object) + "'>";
+                var locName = "<p class='js-name'>" + location.name + "</p>";
+                var dist = "<p class='js-distance'>Entfernung: " + distance + "</p>";
+
+                var li = "<li class='js-element'>" + image + locName + dist + "</li>";
+
+                document.querySelector('#js-list').innerHTML += li;
+
+                // document.querySelector('#js-list').innerHTML += img + name + dis;
             }
         }
     }

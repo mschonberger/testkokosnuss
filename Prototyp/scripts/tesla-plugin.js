@@ -57,6 +57,24 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         'Error: Your browser doesn\'t support geolocation.');
 }
 
+function addLocation(place) {
+    var marker = new google.maps.Marker({
+        map: map,
+        position: place,
+        icon: {
+            url: '../Prototyp/images/tesla-plugin/map-marker.svg',
+            anchor: new google.maps.Point(0, 10),
+            scaledSize: new google.maps.Size(20, 20)
+        }
+    });
+
+    google.maps.event.addListener(marker, 'click', function() {
+
+        infoWindow.setContent('Deine Position');
+        infoWindow.open(map, marker);
+    });
+}
+
 function performSearch() {
 
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -68,8 +86,7 @@ function performSearch() {
             keyword: 'Sehenswürdigkeit'
         };
 
-        //Listen Reset
-        document.querySelector('#js-list').innerHTML = "";
+        clearList(position);
 
         service.radarSearch(request, callback);
     });
@@ -85,19 +102,6 @@ function callback(results, status) {
         addMarker(result);
     }
 }
-
-function addLocation(place) {
-    var marker = new google.maps.Marker({
-        map: map,
-        position: place,
-        icon: {
-            url: '../Prototyp/images/tesla-plugin/map-marker.svg',
-            anchor: new google.maps.Point(0, 0),
-            scaledSize: new google.maps.Size(17, 17)
-        }
-    });
-}
-
 
 function addMarker(place) {
     var marker = new google.maps.Marker({
@@ -116,9 +120,7 @@ function addMarker(place) {
             return;
         }
 
-        //Fill List
-        var text = "<li>" + result.name + "</li>";
-        document.querySelector('#js-list').innerHTML += text;
+        createElement(result);
 
     });
 

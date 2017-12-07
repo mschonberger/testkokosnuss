@@ -7,10 +7,11 @@
 }
 
 .image__right{
-    width: 70%;
+    width: 75%;
     display: block;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0 auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
 }
 
 .header__text{
@@ -19,7 +20,13 @@
   vertical-align:middle;
   margin-left: 10%;
   margin-right: 10%;
-  text-shadow: 2px 2px #007BE4;
+  /*text-shadow: 2px 2px var(--tsl-blue);*/
+  font-size: var(--fs-m);
+}
+
+.header__title{
+  text-shadow: 2px 2px var(--tsl-blue);
+  font-size: var(--fs-xl);
 }
 
 .tabelle {

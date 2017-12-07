@@ -1,21 +1,55 @@
 #js-map {
-	height: 300px;
+	height: 50%;
 	width: 100%
-}
-
-img.js-img {
-	display: inline;
-	width: 4rem;
 }
 
 ul.js-list {
 	list-style-type: none;
 	text-decoration: none;
+	max-height: 45%; 
 }
 li.js-element {
 	list-style-type: none;
 	text-decoration: none;
 }
-li.js-liImg+li.js-name+li.js-distance {
+.js-liImg+.js-name+.js-distance {
 	display: inline;
+}
+
+img.js-img {
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	display: inline;
+	width: 4rem;
+}
+
+p.js-name, p.js-distance {
+	margin-right: 1rem;
+	display: inline;
+}
+
+
+
+img.js-img {
+	grid-area: img;
+}
+
+p.js-name {
+	grid-area: name;
+}
+
+p.js-distance {
+	grid-area: dis;
+}
+
+ul.js-list {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: auto auto;
+	grid-template-areas: 
+		"img name"
+		"img dis";
+	grid-column-gap: 1rem;	
+	grid-row-gap: 1rem;
+	align-items: start;
 }

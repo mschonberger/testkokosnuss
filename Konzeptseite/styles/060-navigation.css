@@ -9,7 +9,7 @@
 }
 
 .nav {
-	background: rgb(235, 235, 235);
+	background: #bcc6cc;
 	font-size: 1.2rem;
 }
 
@@ -35,7 +35,7 @@
 
 .menu__element {
 	display: inline-block;
-  	font-size: 32;
+  font-size: 32;
 }
 
 .menu__element + .menu__element {

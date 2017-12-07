@@ -1,0 +1,25 @@
+.right__image{
+    width: 70%;
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.left__image{
+    width: 70%;
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.information__text{
+  color: black;
+  text-align:center;
+  vertical-align:middle;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.information__tabelle {
+  width: 50%
+}

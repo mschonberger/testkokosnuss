@@ -1,22 +1,22 @@
 .right__image{
-    height: 25%;
-    width: auto;
+    height: auto;
+    width: 25%;
     display: block;
-    float: left;
+    margin: 0 auto;
 }
 
 .left__image{
-    height: 25%;
-    width: auto;
+    height: auto;
+    width: 25%;
     display: block;
-    float: right;
+    margin: 0 auto;
 
 }
 
 .information__text{
   color: black;
-  text-align:center;
-  vertical-align:middle;
+  text-align: left;
+  vertical-align: middle;
   margin-left: 10%;
   margin-right: 10%;
 }

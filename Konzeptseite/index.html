@@ -8,9 +8,10 @@
 
     <title>Tesla Sights</title>
 
-    <!-- Normalize and Resets -->
+    <!-- Normalize, Resets, Bootstrap -->
     <link rel="stylesheet" href="lib/styles/normalize.css">
     <link rel="stylesheet" href="lib/styles/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles/010-resets.css">
@@ -77,15 +78,54 @@
 
     <main>
 
-      <div class="information">
-        <table>
-          <tr>
-            <td class = "tabelle"><h2 class = "information__text"><i class="material-icons">location_on</i>Egal wo Sie sich befinden,</h2> <p class = "information__text">mit Tesla Sight wissen sie immer über die 
-                Sehenswürdigkeiten in Ihrer Nähe Bescheid. Mithilfe der Google Maps API sind wir in der Lage Ihnen immer und überall die schönsten Landstriche und "Picture points" in Ihrer Nähe anzuzeigen.</p> </td>
-            <td class = "tabelle"><img class = "right__image" src="images/kokospalme.png" alt="Platzhalter"> </td>
-          </tr>
-        </table>
+      <div class="row information">
+        <div class="col-md-6">
+          <h2 class = "information__text">
+          <i class="material-icons">location_on</i> Egal wo Sie sich befinden,</h2>
+          <p class = "information__text">
+            mit Tesla Sight wissen sie immer über die Sehenswürdigkeiten in Ihrer Nähe Bescheid. Mithilfe der Google Maps API sind wir in der Lage Ihnen immer und überall die schönsten Landstriche und "Picture points" in Ihrer Nähe anzuzeigen.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img class = "right__image" src="images/kokospalme.png" alt="Platzhalter">
+        </div>
       </div>
+
+      <div class="row information2">
+        <div class="col-md-6">
+          <img class = "left__image" src="images/kokospalme.png" alt="Platzhalter">
+        </div>
+        <div class="col-md-6">
+          <h2 class = "information__text"><i class="material-icons">view_list</i> Übersichtlich</h2> <p class = "information__text">werden Ihnen die hervorzuhebenden Orte angezeigt. Sie werden mit einer einfach überschaubaren Liste über alle Sehenswürdigkeiten informiert, bei der Sie sich dann die Interessantesten auswählen können.</p>
+        </div>
+      </div>
+
+      <div class="row information3">
+        <div class="col-md-6">
+          <h2 class = "information__text">
+            <i class="material-icons">touch_app</i> Einfach und intuitiv </h2>
+            <p class = "information__text">
+              können Sie sich schnell über die Besonderheiten in Ihrer Umgebung informieren. Wir legen großen Wert darauf keine Ablenkung von der Straße darzustellen, daher wird durch eine einfache Bedienung Komfort und Praktkabilität vereint.
+            </p>
+        </div>
+        <div class="col-md-6">
+          <img class = "right__image" src="images/kokospalme.png" alt="Platzhalter">
+        </div>
+      </div>
+
+
+      <section class ="information">
+
+
+
+      <!-- <div class="information__tabelle information__text">
+        <h2><i class="material-icons">location_on</i>Egal wo Sie sich befinden,</h2> <p>mit Tesla Sight wissen sie immer über die
+            Sehenswürdigkeiten in Ihrer Nähe Bescheid. Mithilfe der Google Maps API sind wir in der Lage Ihnen immer und überall die schönsten Landstriche und "Picture points" in Ihrer Nähe anzuzeigen.</p>
+      </div>
+      <div class="information__tabelle">
+        <img class = "right__image" src="images/kokospalme.png" alt="Platzhalter">
+      </div>
+    </section>
 
       <div class="information2">
         <table>
@@ -99,12 +139,11 @@
       <div class="information3">
         <table>
           <tr>
-            <td class = "tabelle"><h2 class = "information__text"><i class="material-icons">touch_app</i>Einfach und intuitiv </h2> <p class = "information__text">können Sie sich schnell über die Besonderheiten in Ihrer Umgebung informieren. Wir legen großen Wert darauf keine Ablenkung von der Straße darzustellen, daher wird durch eine einfache Bedienung Komfort und Praktkabilität vereint.
-                </p> </td>
+            <td class = "tabelle"> </td>
             <td class = "tabelle"><img class = "right__image" src="images/kokospalme.png" alt="Platzhalter"> </td>
           </tr>
         </table>
-      </div>
+      </div> -->
 
       <img src="images/preview.jpg" alt="Platzhalter">
 

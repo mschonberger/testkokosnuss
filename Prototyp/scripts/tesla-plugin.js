@@ -69,9 +69,9 @@ function addLocation(place) {
     });
 
     google.maps.event.addListener(marker, 'click', function() {
-        
-            infoWindow.setContent('Deine Position');
-            infoWindow.open(map, marker);
+
+        infoWindow.setContent('Deine Position');
+        infoWindow.open(map, marker);
     });
 }
 
@@ -86,7 +86,7 @@ function performSearch() {
             keyword: 'Sehenswürdigkeit'
         };
 
-        clearList();
+        clearList(position);
 
         service.radarSearch(request, callback);
     });
@@ -119,7 +119,7 @@ function addMarker(place) {
             console.error(status);
             return;
         }
-        
+
         createElement(result);
 
     });

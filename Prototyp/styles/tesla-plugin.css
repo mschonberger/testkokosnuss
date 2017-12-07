@@ -2,3 +2,20 @@
 	height: 300px;
 	width: 100%
 }
+
+img.js-img {
+	display: inline;
+	width: 4rem;
+}
+
+ul.js-list {
+	list-style-type: none;
+	text-decoration: none;
+}
+li.js-element {
+	list-style-type: none;
+	text-decoration: none;
+}
+li.js-liImg+li.js-name+li.js-distance {
+	display: inline;
+}

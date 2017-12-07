@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, shrink-to-fit=no">
+
+    <title>Tesla Sights</title>
+
+    <!-- Normalize, Resets, Bootstrap -->
+    <link rel="stylesheet" href="../Konzeptseite/lib/styles/normalize.css">
+    <link rel="stylesheet" href="../Konzeptseite/lib/styles/main.css">
+    <link rel="stylesheet" href="../Konzeptseite/css/bootstrap.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../Konzeptseite/styles/010-resets.css">
+    <link rel="stylesheet" href="../Konzeptseite/styles/020-base.css">
+    <link rel="stylesheet" href="../Konzeptseite/styles/030-typography.css">
+    <link rel="stylesheet" href="../Konzeptseite/styles/040-layout.css">
+    <link rel="stylesheet" href="../Konzeptseite/styles/050-components.css">
+    <link rel="stylesheet" href="../Konzeptseite/styles/060-navigation.css">
+    <link rel="stylesheet" href="../Konzeptseite/styles/070-header.css">
+    <link rel="stylesheet" href="../Konzeptseite/styles/080-information.css">
+    <link rel="stylesheet" href="../Konzeptseite/styles/090-footer.css">
+
+
+    <!-- Icons & Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+
+      <nav class="nav">
+
+        <img class="nav__logo" src="../Konzeptseite/images/kokospalme.png" alt="Kokospalme">
+
+        <div class="nav__menu">
+          <ul>
+            <li class="menu__element nav__font"> <a href="#">Home </a></li>
+            <li class="menu__element nav__font"> <a href="Dokumentation/index.html" target="_blank"> Doku </a> </li>
+            <!-- <li class="menu__element nav__font"> <a href="Prototyp/screen-layout-4er.html" target="_blank"> ../Konzeptseite </a> </li> -->
+
+            <li class="menu__element nav__font"> <a href="http://www.gm.fh-koeln.de/~inf181/" target="_blank"> ADV Seite </a> </li>
+            <li class="menu__element nav__font"> <a href="#preview"> Preview </a> </li>
+            <li class="menu__element nav__font"> <a href="#information"> Information </a> </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class = "header">
+
+        <table>
+    	     	<tr>
+    		        <td class = "tabelle" rowspan="2"><img class ="image__right" src="../Konzeptseite/images/Logo.png" alt="Platzhalter"></td>
+    		          <td class = "tabelle">
+                    <div class="">
+                      <h1 class = "header__text header__title">Tesla Sight <br>Sehen heißt erleben </h1>
+                      <p class = "header__text">
+                        Mit Tesla Sights erleben Sie Ihre Umgebung auf eine ganz neue Art und Weise.
+                    </div>
+
+                  </td>
+    	           </tr>
+            <tr>
+              <td class = "tabelle">
+                <input class="MyButton" type="button" value="Prototype" onclick="window.location.href='Prototyp/screen-layout-4er.html'" />
+                <input class="MyButton" type="button" value="Dokumentation" onclick="window.location.href='Dokumentation/index.html'" />
+              </td>
+            </tr>
+        </table>
+      </div>
+
+    </header>
+
+    <main>
+
+      <div id = "information" class="row information">
+        <div class="col-md-6">
+          <h2 class = "information__text">
+          <i class="material-icons">location_on</i> Egal wo Sie sich befinden,</h2>
+          <p class = "information__text">
+            mit Tesla Sight wissen sie immer über die Sehenswürdigkeiten in Ihrer Nähe Bescheid. Mithilfe der Google Maps API sind wir in der Lage Ihnen immer und überall die schönsten Landstriche und "Picture points" in Ihrer Nähe anzuzeigen.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img class = "right__image" src="../Konzeptseite/images/Groß Mockup.png" alt="Groß Mockup">
+        </div>
+      </div>
+
+      <div class="row information2">
+        <div class="col-md-6">
+          <img class = "left__image" src="../Konzeptseite/images/Verteiler Mockup.png" alt="Platzhalter">
+        </div>
+        <div class="col-md-6">
+          <h2 class = "information__text"><i class="material-icons">view_list</i> Übersichtlich</h2> <p class = "information__text">werden Ihnen die hervorzuhebenden Orte angezeigt. Sie werden mit einer einfach überschaubaren Liste über alle Sehenswürdigkeiten informiert, bei der Sie sich dann die Interessantesten auswählen können.</p>
+        </div>
+      </div>
+
+      <div class="row information3">
+        <div class="col-md-6">
+          <h2 class = "information__text">
+            <i class="material-icons">touch_app</i> Einfach und intuitiv </h2>
+            <p class = "information__text">
+              können Sie sich schnell über die Besonderheiten in Ihrer Umgebung informieren. Wir legen großen Wert darauf keine Ablenkung von der Straße darzustellen, daher wird durch eine einfache Bedienung Komfort und Praktkabilität vereint.
+            </p>
+        </div>
+        <div class="col-md-6">
+          <img class = "right__image" src="../Konzeptseite/images/Winzig Mockup.png" alt="Platzhalter">
+        </div>
+      </div>
+
+      <img id="preview" src="../Konzeptseite/images/preview.png" alt="Platzhalter">
+
+    </main>
+
+    <footer class = "footer__stuff">
+      <div class="row">
+        <div class="col-md-6"> <img class = "footer__image" src="../Konzeptseite/images/TH_Koeln_Logo.svg" alt="Logo der TH"><p class = "footer__text">Dieses Projekt wurde im Rahmen der WBA-Challenge am 07.12.2017 erstellt. Es handelt sich hierbei um ein fiktives Produkt. Erstellt von Team Kokonsnuss (Malte Schönberger, Tristan Schmele, Annette Erfort, Daniel Tipping</p> </div>
+        <div class="col-md-6">
+          <img class = "left__image" src="../Konzeptseite/images/kokospalme.png" alt="Platzhalter">
+        </div>
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>

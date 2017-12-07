@@ -8,6 +8,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 .header {
   background-image: url(../images/header.png);
   background-size: cover;
+  padding-bottom: 1rem;
 }
 
 .information {

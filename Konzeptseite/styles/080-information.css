@@ -1,15 +1,16 @@
 .right__image{
-    width: 70%;
+    height: 25%;
+    width: auto;
     display: block;
-    margin-left: 50px;
-    margin-right: 50px;
+    float: left;
 }
 
 .left__image{
-    width: 70%;
+    height: 25%;
+    width: auto;
     display: block;
-    margin-left: 50px;
-    margin-right: 50px;
+    float: right;
+
 }
 
 .information__text{

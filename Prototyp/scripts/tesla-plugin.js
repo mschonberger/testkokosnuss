@@ -57,6 +57,24 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         'Error: Your browser doesn\'t support geolocation.');
 }
 
+function addLocation(place) {
+    var marker = new google.maps.Marker({
+        map: map,
+        position: place,
+        icon: {
+            url: '../Prototyp/images/tesla-plugin/map-marker.svg',
+            anchor: new google.maps.Point(0, 10),
+            scaledSize: new google.maps.Size(20, 20)
+        }
+    });
+
+    google.maps.event.addListener(marker, 'click', function() {
+        
+            infoWindow.setContent('Deine Position');
+            infoWindow.open(map, marker);
+    });
+}
+
 function performSearch() {
 
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -85,19 +103,6 @@ function callback(results, status) {
         addMarker(result);
     }
 }
-
-function addLocation(place) {
-    var marker = new google.maps.Marker({
-        map: map,
-        position: place,
-        icon: {
-            url: '../Prototyp/images/tesla-plugin/map-marker.svg',
-            anchor: new google.maps.Point(0, 0),
-            scaledSize: new google.maps.Size(17, 17)
-        }
-    });
-}
-
 
 function addMarker(place) {
     var marker = new google.maps.Marker({

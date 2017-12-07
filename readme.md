@@ -2,6 +2,12 @@
 In diesem Repo arbeiten folgende Personen:   
 Malte Schönberger, Tristan Schmele, Annette Erfort, Daniel Tipping
 
+## Inhalte vor der Challenge
+Bereits vor dem Tag der Challenge wurden folgende Dinge hochgeladen und erstellt:  
+* ReferencePage (komplettes Verzeichnis)
+* BasisProjectStruktur (Ordner in dem für jedes Team die grundlegende Projektstruktur in Form von Template Dateien zu finden ist)
+* Ordner für die jeweiligen Teams (Prototyp, Konzept, Dokumentation - mit der BasisProjectStruktur)
+
 ## Ordnerstruktur
 In den Ordnern ist folgendes zu finden:    
 

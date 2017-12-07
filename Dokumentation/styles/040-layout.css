@@ -11,7 +11,12 @@ div{
     padding-left: 30px;
 }
 
-.title
+.title,.subtitle{
     
     margin-left: 20px;
+}
+
+p{
+    margin-left: 40px
+        
 }

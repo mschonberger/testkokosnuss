@@ -5,6 +5,7 @@ var map;
 var infoWindow;
 var service;
 var pos;
+var res;
 
 function initMap() {
 	// Create a map object and specify the DOM element for display.
@@ -57,8 +58,8 @@ function performSearch() {
 
     	var request = {
   			location: loc,
-  			radius: 1000,
-    		keyword: 'Sehenswürdigkeiten'
+  			radius: 2000,
+    		keyword: 'Sehenswürdigkeit'
   		};
   		service.radarSearch(request, callback);
     });
@@ -69,9 +70,15 @@ function callback(results, status) {
     console.error(status);
     return;
   }
+  res = [null, null, null];
   for (var i = 0, result; result = results[i]; i++) {
+    if (i < 3) {
+    	res[i] = result;
+
+    }
     addMarker(result);
   }
+  // showResults(res);
 }
 
 function addMarker(place) {
@@ -93,6 +100,21 @@ function addMarker(place) {
       }
       infoWindow.setContent(result.name);
       infoWindow.open(map, marker);
+
+      var text = "<li>" + result.name + "</li>";
+      document.querySelector('#js-list').innerHTML += text;
+
     });
   });
+}
+
+
+function showResults (array) {
+	document.querySelector('#js-list').innerHTML = "";
+	for (var i = 0; i < 3; i++){
+		if(array[i] != null){
+			var text = "<li>" + array[i].name + "</li>";
+		}
+		document.querySelector('#js-list').innerHTML += text;
+	}
 }

@@ -42,11 +42,13 @@
 
         <div class="nav__menu">
           <ul>
-            <li class="menu__element nav__font"><a href="#">Home </a></li>
-            <li class="menu__element nav__font"> <a href="../Konzeptseite/index.html"> Konzept </a> </li>
-            <li class="menu__element nav__font"> <a href="../Prototyp/screen-layout-4er.html"> Konzept </a> </li>
-            <li class="menu__element nav__font"> <a href="#"> Test </a> </li>
-            <li class="menu__element nav__font"> <a href="#"> Test </a> </li>
+            <li class="menu__element nav__font"> <a href="#">Home </a></li>
+            <li class="menu__element nav__font"> <a href="../Dokumentation/index.html" target="_blank"> Doku </a> </li>
+            <li class="menu__element nav__font"> <a href="../Prototyp/screen-layout-4er.html" target="_blank"> Konzept </a> </li>
+
+            <li class="menu__element nav__font"> <a href="http://www.gm.fh-koeln.de/~inf181/" target="_blank"> ADV Seite </a> </li>
+            <li class="menu__element nav__font"> <a href="#preview"> Preview </a> </li>
+            <li class="menu__element nav__font"> <a href="#information"> Information </a> </li>
           </ul>
         </div>
       </nav>
@@ -67,7 +69,7 @@
     	           </tr>
             <tr>
               <td class = "tabelle">
-                <input class="MyButton" type="button" value="Prototype" onclick="window.location.href=''../Prototyp/screen-layout-4er.html' />
+                <input class="MyButton" type="button" value="Prototype" onclick="window.location.href='../Prototyp/screen-layout-4er.html'" />
                 <input class="MyButton" type="button" value="Dokumentation" onclick="window.location.href='../Dokumentation/index.html'" />
               </td>
             </tr>
@@ -78,7 +80,7 @@
 
     <main>
 
-      <div class="row information">
+      <div id = "information" class="row information">
         <div class="col-md-6">
           <h2 class = "information__text">
           <i class="material-icons">location_on</i> Egal wo Sie sich befinden,</h2>
@@ -109,26 +111,19 @@
             </p>
         </div>
         <div class="col-md-6">
-          <img class = "right__image" src="images/kokospalme.png" alt="Platzhalter">
+          <img class = "right__image" src="images/Winzig Mockup.png" alt="Platzhalter">
         </div>
       </div>
 
-      <img src="images/preview.jpg" alt="Platzhalter">
+      <img id="preview" src="images/preview.png" alt="Platzhalter">
 
     </main>
 
-    <footer class = "footer">
+    <footer class = "footer__stuff">
       <div class="row">
-        <div class="col-md-6"> <img class = "footer__image" src="images/TH_Koeln_Logo.svg" alt="Logo der TH"><p class = "header__text">Dieses Projekt wurde im Rahmen der WBA-Challenge am 07.12.2017 erstellt. Es handelt sich hierbei um ein fiktives Produkt.</p> </div>
+        <div class="col-md-6"> <img class = "footer__image" src="images/TH_Koeln_Logo.svg" alt="Logo der TH"><p class = "footer__text">Dieses Projekt wurde im Rahmen der WBA-Challenge am 07.12.2017 erstellt. Es handelt sich hierbei um ein fiktives Produkt.</p> </div>
         <div class="col-md-6">
           <img class = "left__image" src="images/kokospalme.png" alt="Platzhalter">
-          <ul class = "header__text">
-            <p>Team Kokosnuss besteht aus:</p>
-            <li>Malte Schönberger</li>
-            <li>Tristan Schmele</li>
-            <li>Annette Erfort</li>
-            <li>Daniel Robert Tipping</li>
-          </ul>
         </div>
         </div>
       </div>

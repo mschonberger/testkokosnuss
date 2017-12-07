@@ -14,7 +14,7 @@ function initMap() {
 
 	map = new google.maps.Map(document.getElementById('js-map'), {
 	  	center: pos,
-	  	zoom: 12
+	  	zoom: 13
 	});
 
 	infoWindow = new google.maps.InfoWindow({map: map});
@@ -23,9 +23,9 @@ function initMap() {
     // Try HTML5 geolocation.
     if (navigator.geolocation) {
      	navigator.geolocation.getCurrentPosition(function(position) {
-        	var pos = {
-          	lat: position.coords.latitude,
-          	lng: position.coords.longitude
+        	pos = {
+          		lat: position.coords.latitude,
+          		lng: position.coords.longitude
         	};
 
         	infoWindow.setPosition(pos);
@@ -52,11 +52,16 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 }
 
 function performSearch() {
-  var request = {
-    bounds: map.getBounds(),
-    keyword: 'Sehenswürdigkeiten'
-  };
-  service.radarSearch(request, callback);
+	navigator.geolocation.getCurrentPosition(function(position) {
+    	var loc = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
+    	var request = {
+  			location: loc,
+  			radius: 1000,
+    		keyword: 'Sehenswürdigkeiten'
+  		};
+  		service.radarSearch(request, callback);
+    });
 }
 
 function callback(results, status) {

@@ -10,7 +10,9 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 -----------------------------------------------------------------------------*/
 
 .title,
-.subtitle {
+.subtitle,
+.subsubtitle,
+.subsubsubtitle{
     font-size: var(--fs-xl);
     font-family: var(--brand-font);
     margin: 0;
@@ -25,4 +27,13 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 .subtitle {
     font-size: var(--fs-l);
     color: var(--secondary);
+}
+.subsubtitle{
+    font-size: var(--fs-m);
+}
+
+.subsubsubtitle{
+    font-size: var(--fs-m);
+    color: var(--secondary);
+    padding-left: 5px;
 }

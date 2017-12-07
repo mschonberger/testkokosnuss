@@ -1,12 +1,12 @@
 /*----------------------------------------------------------------------------
-typography.css                                                                  
-Enthält alle übergreifenden typographischen Regeln.  
+typography.css
+Enthält alle übergreifenden typographischen Regeln.
 
 Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 ----------------------------------------------------------------------------*/
 
 
-/* General 
+/* General
 -----------------------------------------------------------------------------*/
 
 p {
@@ -25,18 +25,19 @@ figcaption {
 	font-family: serif;
 }
 
-/* Links 
+/* Links
 -----------------------------------------------------------------------------*/
 
 a {
-	color: var(--color-brand);
+	color: rgb(235, 235, 235);
 	text-decoration: none;
 }
 a:visited {
 	/*color: var(--color-head);*/
 }
 a:hover {
-	text-decoration: underline;
+  color: rgb(245, 13, 215);
+  text-decotration: none;
 }
 
 /* Titles

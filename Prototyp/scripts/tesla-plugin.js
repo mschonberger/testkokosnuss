@@ -8,13 +8,13 @@ var pos;
 
 function initMap() {
 	// Create a map object and specify the DOM element for display.
-	var cologne = {lat: 50.9573677, lng: 6.6871441};
+	var gm = {lat: 51.0237731, lng: 7.5609185};
 
-	pos = cologne
+	pos = gm;
 
 	map = new google.maps.Map(document.getElementById('js-map'), {
 	  	center: pos,
-	  	zoom: 8
+	  	zoom: 12
 	});
 
 	infoWindow = new google.maps.InfoWindow({map: map});
@@ -53,8 +53,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 
 function performSearch() {
   var request = {
-    location: pos,
-    radius: 1000,
+    bounds: map.getBounds(),
     keyword: 'Sehenswürdigkeiten'
   };
   service.radarSearch(request, callback);

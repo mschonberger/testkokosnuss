@@ -1,8 +1,11 @@
 /*----------------------------------------------------------------------------
-layout.css                                                                  
-Enthält alle übergreifenden typographischen Regeln.  
+layout.css
+Enthält alle übergreifenden typographischen Regeln.
 
 Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 ----------------------------------------------------------------------------*/
 
-
+.header {
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+}

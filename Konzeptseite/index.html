@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, shrink-to-fit=no">
 
-    <title>Titel</title>
+    <title>Tesla Sights</title>
 
     <!-- Normalize and Resets -->
     <link rel="stylesheet" href="lib/styles/normalize.css">
@@ -18,22 +18,63 @@
     <link rel="stylesheet" href="styles/030-typography.css">
     <link rel="stylesheet" href="styles/040-layout.css">
     <link rel="stylesheet" href="styles/050-components.css">
-    
-    <!-- Fonts -->
+    <link rel="stylesheet" href="styles/060-navigation.css">
+
+    <!-- Icons & Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
 </head>
 
 <body>
     <header>
-        
+
+      <nav class="nav">
+
+        <img class="nav__logo" src="images/kokospalme.png" alt="Kokospalme">
+
+        <div class="nav__menu">
+          <ul>
+            <li class="menu__element nav__font"><a href="#">Home </a></li>
+            <li class="menu__element nav__font"> <a href="#"> Test </a> </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class = "header">
+
+        <table>
+    	     	<tr>
+    		        <td class = "taballe" rowspan="2"><img class ="image__right" src="images/kokospalme.png" alt="Platzhalter"></td>
+    		          <td class = "tabelle">
+                    <h2 class = "header__text">Titel</h2>
+                    <p class = "header__text">
+                      Das ist ein freier Text, der durch magische Weise künstlich verlängert wird, um zu schauen ob das auch alles passt. Rechtschreibfehler sind mir sowas von egal!
+                      Wie läuft es so? Gut? Was macht die Frau? WIe geht es denn Kindern? Oh.. sie haben gar keine Kinder? Nun dann sollten Sie vielleicht drüber nachdenken, der Staat
+                      bezahlt in letzter zeit genauso viel wie sonst auch. Es könnte sich also irgendwie lohnen.
+                    </p>
+                  </td>
+    	           </tr>
+            <tr>
+              <td>
+                <input class="MyButton" type="button" value="Prototype" onclick="window.location.href='github.com'" />
+                <input class="MyButton" type="button" value="Dokumentation" onclick="window.location.href='github.com'" />
+              </td>
+            </tr>
+        </table>
+
+      </div>
+
     </header>
 
     <main>
-        
+          <p>Hier wird sich bald der Mainbereich mit drei info boxen, und einem großen media panel befinden</p>
     </main>
 
     <footer>
-        
+      <p>Das ist ein weiterer lustiger Testsatz, um als Platzhalter zu dienen</p>
     </footer>
 </body>
 

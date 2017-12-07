@@ -1,12 +1,56 @@
 /*----------------------------------------------------------------------------
-typography.css                                                                  
-Enthält alle übergreifenden typographischen Regeln.  
+typography.css
+Enthält alle übergreifenden typographischen Regeln.
 
 Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 ----------------------------------------------------------------------------*/
 
 
-/* Titles 
+/* General
+-----------------------------------------------------------------------------*/
+
+p {
+	text-align: justify;
+}
+
+code {
+	font-family: 'Verdana';
+	font-weight: bold;
+	display: block;
+	margin-left: var(--space-inline-xl);
+}
+
+figcaption {
+	font-size: var(--fs-s);
+	font-family: serif;
+}
+
+.nav__font {
+	font-family: 'Fredoka One', cursive;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Links
+-----------------------------------------------------------------------------*/
+
+a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+
+a:visited {
+	/*color: var(--color-head);*/
+}
+
+a:hover {
+  color: rgb(245, 13, 215);
+  text-decotration: none;
+}
+
+/* Titles
 -----------------------------------------------------------------------------*/
 
 .title,
@@ -19,10 +63,25 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 }
 
 .title {
-    color: var(--primary);
+    color: var(--color-brand);
 }
 
 .subtitle {
     font-size: var(--fs-l);
-    color: var(--secondary);
+}
+
+.title+.subtitle {
+    margin-top: calc(var(--space-stack-xs) - var(--space-stack-xl));
+}
+
+.topic {
+	color: var(--color-brand);
+	font-size: var(--fs-default);}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+footer p {
+	text-align: center;
+	color: var(--color-text-light);
 }

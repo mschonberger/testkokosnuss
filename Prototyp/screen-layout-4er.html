@@ -12,6 +12,9 @@
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+    
+    <!-- Plugin Styles -->
+    <link rel="stylesheet" href="styles/tesla-plugin.css">
 </head>
 
 <body>
@@ -53,6 +56,7 @@
 
                     <h4>Unser Conetnt</h4>
                     <p>Hier kommt unser Zeug rein</p>
+                    <div id="js-map"></div>
                     <button class="btn">krasser Knopf</button>
 
                     <!-- End of content box 4 ############################################-->
@@ -131,5 +135,8 @@
 
     <!-- Unser Skript -->
     <script src="scripts/tesla-plugin.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAj0gW2q6x8BuYHuK7R4wxppOOATTL_VgI&libraries=places&callback=initMap">
+    </script>
 
 </body>

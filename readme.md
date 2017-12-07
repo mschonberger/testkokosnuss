@@ -8,6 +8,10 @@ Bereits vor dem Tag der Challenge wurden folgende Dinge hochgeladen und erstellt
 * BasisProjectStruktur (Ordner in dem für jedes Team die grundlegende Projektstruktur in Form von Template Dateien zu finden ist)
 * Ordner für die jeweiligen Teams (Prototyp, Konzept, Dokumentation - mit der BasisProjectStruktur)
 
+Commits vor der Challenge:
+* mschonberger commits 11 / 2.400.472 ++ / 1.199.540 -- (Durch 2x verschieben des vorgefertigten MockUps)
+* CharaSensei  commits 5 / 4325 ++ / 1663 --
+
 ## Ordnerstruktur
 In den Ordnern ist folgendes zu finden:    
 

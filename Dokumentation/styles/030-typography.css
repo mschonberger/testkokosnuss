@@ -19,7 +19,7 @@ Wer es noch schöner möchte, möge sich mal https://cssguidelin.es/ anschauen.
 }
 
 .title {
-    color: var(--primary);
+    /*color: var(--primary);*/
 }
 
 .subtitle {

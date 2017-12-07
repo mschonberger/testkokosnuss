@@ -5,8 +5,7 @@ function clearList() {
 
 function createElement (location) {
 	//Fill List
-	var text = "<li>" + location.name + "</li>";
+	var text = "<li class='js-element'>" + location.name + "</li>";
     document.querySelector('#js-list').innerHTML += text;
-    document.querySelector('#js-list li').classList.add('js-element');
-    
+
 }

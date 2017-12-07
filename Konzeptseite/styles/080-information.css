@@ -2,21 +2,21 @@
     height: auto;
     width: 25%;
     display: block;
-    margin: 0 auto;
+    margin: 5% auto;
 }
 
 .left__image{
     height: auto;
     width: 25%;
     display: block;
-    margin: 0 auto;
-
+    margin: 5% auto;
 }
 
 .information__text{
   color: black;
   text-align: left;
   vertical-align: middle;
+  margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
 }

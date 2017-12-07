@@ -42,11 +42,11 @@
 
         <div class="nav__menu">
           <ul>
-            <li class="menu__element nav__font"><a href="#">Home </a></li>
-            <li class="menu__element nav__font"> <a href="#"> Test </a> </li>
-            <li class="menu__element nav__font"> <a href="#"> Test </a> </li>
-            <li class="menu__element nav__font"> <a href="#"> Test </a> </li>
-            <li class="menu__element nav__font"> <a href="#"> Test </a> </li>
+            <li class="menu__element nav__font"> <a href="#">Home </a></li>
+            <li class="menu__element nav__font"> <a href="../Dokumentation/index.html"> Doku </a> </li>
+            <li class="menu__element nav__font"> <a href="../Prototyp/screen-layout-4er.html"> Prototyp </a> </li>
+            <li class="menu__element nav__font"> <a href="#information"> Informationen </a> </li>
+            <li class="menu__element nav__font"> <a href="#preview"> Preview</a> </li>
           </ul>
         </div>
       </nav>
@@ -67,8 +67,8 @@
     	           </tr>
             <tr>
               <td class = "tabelle">
-                <input class="MyButton" type="button" value="Prototype" onclick="window.location.href='github.com'" />
-                <input class="MyButton" type="button" value="Dokumentation" onclick="window.location.href='github.com'" />
+                <input class="MyButton" type="button" value="Dokumentation" onclick="window.location.href='../Dokumentation/index.html'" />
+                <input class="MyButton" type="button" value="Prototyp" onclick="window.location.href='../Prototyp/screen-layout-4er.html'" />
               </td>
             </tr>
         </table>
@@ -117,19 +117,16 @@
 
     </main>
 
-    <footer class = "footer">
+    <footer>
       <div class="row">
-        <div class="col-md-6"> <img class = "left__image" src="images/th-koeln.jpg" alt="Logo der TH"><p class = "header__text">Dieses Projekt wurde im Rahmen der WBA-Challenge am 07.12.2017 erstellt. Es handelt sich hierbei um ein fiktives Produkt.</p> </div>
-        <div class="col-md-6">
-          <img class = "left__image" src="images/kokospalme.png" alt="Platzhalter">
-          <ul class = "header__text">
-            <p>Team Kokosnuss besteht aus:</p>
-            <li>Malte Schönberger</li>
-            <li>Tristan Schmele</li>
-            <li>Annette Erfort</li>
-            <li>Daniel Robert Tipping</li>
-          </ul>
+        <div class="col-md-6 footer__stuff">
+          <img class = "left__image" src="images/TH_Koeln_Logo.svg" alt="Logo der TH">
         </div>
+        <div class="col-md-4 footer__stuff">
+          <p class = "information__text">Dieses Projekt wurde im Rahmen der WBA-Challenge am 07.12.2017 erstellt. Es handelt sich hierbei um ein fiktives Produkt.</p>
+        </div>
+        <div class="col-md-2 footer_stuff">
+          <img class = "left__image" src="images/kokospalme.png" alt="Platzhalter">
         </div>
       </div>
     </footer>

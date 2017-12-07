@@ -73,10 +73,12 @@ function callback(results, status) {
   res = [null, null, null];
   for (var i = 0, result; result = results[i]; i++) {
     if (i < 3) {
-    	res[i] = result;
-
+      // var text = "<li>" + result.name + "</li>";
+      // document.querySelector('#js-list').innerHTML += text;
+      res[i] = result;
     }
     addMarker(result);
+
   }
   // showResults(res);
 }
@@ -92,6 +94,9 @@ function addMarker(place) {
     }
   });
 
+      var text = "<li>" + place.formatted_address + "</li>";
+      document.querySelector('#js-list').innerHTML += text;
+
   google.maps.event.addListener(marker, 'click', function() {
     service.getDetails(place, function(result, status) {
       if (status !== google.maps.places.PlacesServiceStatus.OK) {
@@ -100,9 +105,6 @@ function addMarker(place) {
       }
       infoWindow.setContent(result.name);
       infoWindow.open(map, marker);
-
-      var text = "<li>" + result.name + "</li>";
-      document.querySelector('#js-list').innerHTML += text;
 
     });
   });
